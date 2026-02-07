@@ -1,0 +1,23 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "net.funkpla.smallships_lava_sailing.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "refmap": "${mod_id}.refmap.json",
+    "mixins": [
+        "DockyardRecipeMixin",
+        "EntityMixin",
+        "ShipMixin",
+        "WaterSpawnFinderMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "overwrites": {
+        "requireAnnotations": true
+    },
+    "client": [
+        "DockyardScreenInvoker",
+        "DockyardScreenMixin"
+    ]
+}
