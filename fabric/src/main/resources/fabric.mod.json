@@ -11,7 +11,7 @@
         "sources": "https://github.com/murphy_slaw/examplemod"
     },
     "license": "${license}",
-    "icon": "assets/smallships-ecologics-compat/icon.png",
+    "icon": "icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
@@ -26,7 +26,6 @@
         "fabricloader": ">=0.18.4",
         "minecraft": "~1.21.1",
         "java": ">=21",
-        "fabric-api": "*",
         "smallships":">=2.0.0"
     }
 }
