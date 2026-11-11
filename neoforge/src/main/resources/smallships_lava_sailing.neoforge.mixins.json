@@ -3,11 +3,15 @@
     "package": "net.funkpla.smallships_lava_sailing.mixin",
     "compatibilityLevel": "JAVA_21",
     "mixins": [
+        "BoatMixin"
     ],
     "injectors": {
         "defaultRequire": 1
     },
     "overwrites": {
         "requireAnnotations": true
-	}
+    },
+    "client": [
+        "DockyardScreenMixin"
+    ]
 }
