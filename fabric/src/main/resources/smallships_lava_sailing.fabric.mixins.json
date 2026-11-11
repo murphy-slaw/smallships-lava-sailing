@@ -1,0 +1,15 @@
+{
+    "required": true,
+    "package": "net.funkpla.smallships_lava_sailing.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [
+        "BoatMixin",
+        "WaterSpawnFinderMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "overwrites": {
+        "requireAnnotations": true
+	}
+}
