@@ -24,7 +24,7 @@ publishMods {
             Changelog.OutputType.MARKDOWN
     )
     def cfOptions = curseforgeOptions{
-        projectId = "1456544"
+        projectId = "1799583"
         projectSlug = "small-ships-lava-sailing" // Required for discord webhook
         accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
         minecraftVersions.add(project.minecraft_version)
@@ -34,7 +34,7 @@ publishMods {
         requires("small-ships")
     }
     def mrOptions = modrinthOptions{
-        projectId = "PlTZXaqD"
+        projectId = "td04rNhz"
         accessToken = providers.environmentVariable("MODRINTH_TOKEN")
         minecraftVersions.add(project.minecraft_version)
         requires("small-ships")
