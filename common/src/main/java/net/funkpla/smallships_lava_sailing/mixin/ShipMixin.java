@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(Ship.class)
-public abstract class ShipMixin extends EntityMixin {
+public abstract class ShipMixin {
 
   /** Float nether ships in water OR lava. */
   @WrapMethod(method = "floatUp", remap = false)
@@ -33,6 +33,7 @@ public abstract class ShipMixin extends EntityMixin {
       at =
           @At(
               value = "INVOKE",
+              remap = true,
               target = "Lcom/talhanation/smallships/world/entity/ship/Ship;isInWater()Z"))
   private boolean isInWaterOrLava(Ship instance, Operation<Boolean> original) {
     return instance.isInWater()
@@ -46,7 +47,7 @@ public abstract class ShipMixin extends EntityMixin {
    */
   @WrapOperation(
       method = {"tick", "m_8119_"},
-      remap = false,
+      remap = true,
       at =
           @At(
               value = "INVOKE",
