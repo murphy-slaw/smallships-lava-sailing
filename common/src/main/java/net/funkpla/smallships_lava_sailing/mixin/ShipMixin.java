@@ -45,7 +45,7 @@ public abstract class ShipMixin extends EntityMixin {
    * from being cancelled.
    */
   @WrapOperation(
-      method = "tick",
+      method = {"tick", "m_8119_"},
       remap = false,
       at =
           @At(
